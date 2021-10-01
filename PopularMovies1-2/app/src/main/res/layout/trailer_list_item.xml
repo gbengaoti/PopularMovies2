@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+    <ImageView
+        android:layout_width="@dimen/play_button_width"
+        android:layout_height="@dimen/play_button_height"
+        style="@style/trailer_list_item_style"
+        android:src="@drawable/ic_play_button"
+        android:id="@+id/trailer_play_button"
+        android:contentDescription="@string/play_button_desc"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/trailer_list_item_style"
+        android:textSize="@dimen/synopsis_txt_size"
+        android:id="@+id/trailer_text_view"
+        android:text="@string/deft_trailer_text"
+        />
+
+</LinearLayout>
