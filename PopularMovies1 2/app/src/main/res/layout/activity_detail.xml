@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DetailActivity"
+    tools:keep="@layout/activity_detail">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/detail_screen_top"
+            android:id="@+id/detail_top_half"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            style="@style/include_styles"/>
+
+        <include
+            layout="@layout/trailer_info"
+            android:id="@+id/trailer_details"
+            app:layout_constraintTop_toBottomOf="@+id/detail_top_half"
+            app:layout_constraintLeft_toLeftOf="parent"
+            style="@style/include_styles"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <include
+            layout="@layout/comment_info"
+            android:id="@+id/comment_details"
+            app:layout_constraintTop_toBottomOf="@id/trailer_details"
+            app:layout_constraintLeft_toLeftOf="parent"
+            style="@style/include_styles"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
