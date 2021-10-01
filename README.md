@@ -1,4 +1,4 @@
-# PopularMovies2 - Udacity nanodegree
+# PopularMovies2 - Udacity Android nanodegree
 Project Overview
 Welcome back to Popular Movies! In this second and final stage, you’ll add additional functionality to the app you built in Stage 1.
 
